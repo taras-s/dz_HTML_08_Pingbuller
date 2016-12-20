@@ -1,0 +1,476 @@
+
+/*================== RESET ====================*/
+
+html {  }
+
+* { margin:0; padding:0;
+	/*border: 1px solid #ddd;*/
+}
+
+div, header, footer, table, article, {
+	display: block;
+	position: relative;
+}
+
+a, a:link, a:visited, a:hover, a:active, ul, li{ text-decoration: none; }
+ul, li{	list-style: none;}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	font-family: "League Gothic";
+	text-align: left;
+}
+
+body {
+	line-height: 1.4;
+	font-size: 80%;
+	position: relative;
+	font-family: "Open Sans Light", Arial, SansSerif;
+	font-style: normal;
+	/*overflow: hidden;*/
+}
+
+/*==================================== BASE ===========*/
+
+.wrapper {
+	position: relative;
+	left: calc(50% - 483px);
+	/*left: 316px;*/			/*for debugging*/
+	top: 0px;
+	width: 966px;
+	height: 100%;
+	/*border: 1px solid #777;*/
+}
+
+.header{
+	height: 845px;
+	background: url("../img/back1.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+.brand{
+	height: 340px;
+	background: linear-gradient(#754e84, #33253a);
+	border 1px #33253a
+	text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.5);
+}
+
+.article{
+	height: 485px;
+	background-color: #f9f9f9;
+}
+
+.logos{
+	height: 120px;
+	background-color: #f9f9f9;
+}
+
+.news{
+	height: 392px;
+	background-color: #ececec;	
+}
+
+.footer {
+	height: 135px;
+    background: url("../img/back2.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+/*==================================== OVERLAY ===========================*/
+
+.overlay {
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	top: 277px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slide{
+	display: block;
+	position: absolute;
+	top: 200px;
+	left: 5%;
+	height: 39px;
+	width: 29px;
+	/*border: 3px solid #0f0;*/
+	background:url(../img/icons.png) no-repeat;
+}
+
+.slide--right{
+	left: calc(95% - 29px);
+	background-position-x: -30px;
+}
+
+.dot{
+	z-index: 6;
+	top: 494px;
+	height: 18px;
+	width: 18px;
+	background-position: -79px -0px;
+}
+
+.dot1{ left: calc(50% + 00px - 42px); }
+.dot2{ left: calc(50% + 25px - 42px); }
+.dot3{ left: calc(50% + 50px - 42px); }
+.dot4{ left: calc(50% + 75px - 42px); }
+.dot--active{ background-position-x: -59px; }
+
+/*==================================== HEADER ===========================*/
+
+.logo_main{
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	width: 153px;
+}
+
+.pict_main{
+	position: absolute;
+	left: 618px;
+	top: 260px;
+}
+
+
+.menu {					/*------------------ menu ----------------*/
+	display: block;
+	position: relative;
+	left: 305px;
+	top: 65px;
+	list-style: none;
+}
+
+.menu>li {
+	display: inline-block;
+}
+
+.menu>li>a {
+	display: block;
+	margin: 2px 23px;
+	text-decoration: none;
+
+	font-size: 24px;
+	font-family: "League Gothic";
+	color: #FFF;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
+	border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.menu>li>a:hover {
+	border-bottom: 2px solid #edbfff;
+}
+
+
+/*------------------ nav -----------*/
+
+.hdline{
+	position: relative;
+	top:325px;
+}
+
+.hdline>h2{
+  font-size: 59px;
+  color: rgb(255, 255, 255);
+  line-height: 0.8;
+  text-shadow: 1px 2px 1px rgba(0,0,0,0.6);
+}
+
+.hdline>h3{
+  font-size: 32px;
+  color: #edbfff;
+  line-height: 1.25;
+  text-shadow: 1px 2px 1px rgba(0,0,0,0.6);
+}
+
+.hdline>p{
+	position: relative;
+	margin-top: 2px;
+	display: inline-block;
+	width: 520px;
+
+	font-size: 18px;
+	line-height: 1.35;
+	font-family: "Open Sans Light";
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(15, 21, 24, 0.8);
+}
+
+
+/*======================================== BRAND ========================*/
+
+.brand>.wrapper{
+	display: flex;
+	padding: 70px 0px 0px 0px;
+	justify-content:space-between; /* flex-start;*/
+}
+
+.brand-block{
+	position: relative;
+	width: 284px;
+	/*border: 1px solid black;*/
+}
+
+.brand .tool {
+	display: block;
+	position: absolute;
+	top:5px;
+	left:9px;
+	width: 33px;
+	height: 33px;
+	line-height: 1.35;
+	background:url(../img/icons.png) no-repeat;
+	background-position: -100px -1px;
+}
+
+.brand .tool2{ background-position-x: -131px; }
+.brand .tool3{ background-position-x: -165px; }
+
+.brand h3 {
+	margin: 0px 0px 0px 65px;
+	font-size: 30px;
+	color: #fff;
+	line-height: 1.5;
+	text-shadow: 1px 1px 1px rgba(20,0,0,0.3);
+}
+
+.brand p{
+
+	height: 125px;
+	margin: 0px 0px 0px 65px;
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #fff;
+}
+
+.brand a{
+	display: block;
+	position: relative;
+	width: 70px;
+	height: 25px;
+	margin: 10px 10px 0px 208px;
+
+	font-family: "League Gothic";
+	font-size: 19px;
+	text-align: right;
+	color: #fff;
+	line-height: 1.333;
+	text-shadow: 1px 1px 1px rgba(20,0,10,0.4);
+}
+
+.brand a:hover {
+	text-shadow: 0px 0px 7px rgba(255,255,255,1.0);
+}
+
+/*======================= ARTICLE =====================*/
+
+.article>.wrapper{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 102px 0px 0px 0px;
+	/*align-items: center;*/
+	/*border: 1px solid black;*/
+}
+
+.col-1{
+	position: relative;
+	width: 364px;
+	height: 310px;
+	padding: 20px 40px 0px 61px;
+	/*border: 1px solid black;*/
+	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDMwIiBoZWlnaHQ9IjI5NiIgdmlld0JveD0iMCAwIDQzMCAyOTYiPgogIDxtZXRhZGF0YT48P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzEzOCA3OS4xNTk4MjQsIDIwMTYvMDkvMTQtMDE6MDk6MDEgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiLz4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSJ3Ij8+PC9tZXRhZGF0YT4KPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogI2ZmZjsKICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7CiAgICAgICAgZmlsdGVyOiB1cmwoI2ZpbHRlcik7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8ZmlsdGVyIGlkPSJmaWx0ZXIiIHg9Ijc0MiIgeT0iMTI4OCIgd2lkdGg9IjQzMCIgaGVpZ2h0PSIyOTYiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxmZU9mZnNldCByZXN1bHQ9Im9mZnNldCIgZHk9IjEiIGluPSJTb3VyY2VBbHBoYSIvPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgcmVzdWx0PSJibHVyIiBzdGREZXZpYXRpb249IjEuNDE0Ii8+CiAgICAgIDxmZUZsb29kIHJlc3VsdD0iZmxvb2QiIGZsb29kLW9wYWNpdHk9IjAuMDUiLz4KICAgICAgPGZlQ29tcG9zaXRlIHJlc3VsdD0iY29tcG9zaXRlIiBvcGVyYXRvcj0iaW4iIGluMj0iYmx1ciIvPgogICAgICA8ZmVCbGVuZCByZXN1bHQ9ImJsZW5kIiBpbj0iU291cmNlR3JhcGhpYyIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgogIDxwYXRoIGlkPSJidWJsZS5zdmciIGNsYXNzPSJjbHMtMSIgZD0iTTc0MywxMjg4aDQyN3YyNzJoLTQwdjIxbC0yMC0yMUg3NDNWMTI4OFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03NDIgLTEyODgpIi8+Cjwvc3ZnPgo=") no-repeat;
+	background-position: 23px 0px;
+}
+
+.col-2{
+	width: 454px;
+	height: 310px;
+	padding: 20px 0px 0px 0px;
+	/*border: 1px solid black;*/
+}
+
+/*-------------------------- header ------*/
+
+.article h3{
+	font-size: 30px;
+	color: #454545;
+	text-transform: uppercase;
+}
+
+.article span{ color:#edbfff; }
+
+/*--------------------------items ------*/
+
+.row{ margin: 13px 0px 20px 0px; }
+
+.article p{
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #454545;
+}
+
+.article h5{
+	margin: 0px 0px 0px 65px;
+	font-size: 16px;
+	font-family: "Open Sans Extrabold";
+	color: #454545;
+}
+
+
+.article .row p{ margin: 0px 0px 0px 65px; }
+
+.article h6>a{
+	font-size: 18px;
+	padding-left: 345px;
+	color: #454545;
+}
+
+/*------------------- pictures --------------------*/
+
+.deco{
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	border-radius: 30px;
+	background: url("../img/icons2.png") no-repeat;
+}
+
+.deco0{
+	background-position: -476px -9px;
+	left:0px; top:15px;
+}
+.deco1{	background-position: -562px -02px; }
+.deco2{	background-position: -620px -09px; }
+.deco3{	background-position: -681px -17px; }
+
+
+/*-------------------------- dots -------------------*/
+
+.nav-dots{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 84px;
+	height: 20px;
+	top: 300px;
+	left: calc(50% - 42px);
+	/*border: 1px solid #0f0;*/
+}
+
+.nav-dots .dot{
+	height: 18px;
+	width: 18px;
+	background:url(../img/icons.png) no-repeat;
+	background-position: -81px -21px;
+}
+
+.nav-dots .dot--active{	background-position-x: -59px; }
+
+
+
+/*====================== LOGOS ================*/
+
+.logos>.wrapper{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	display: block;
+	position: relative;
+	height: 70px;
+	background:url(../img/icons2.png) no-repeat;
+	/*border: 1px solid black;*/
+}
+
+.logo0{ background-position-x: 100px; width:026px; }
+.logo1{ background-position-x:-000px; width:070px; }
+.logo2{ background-position-x:-073px; width:074px; }
+.logo3{ background-position-x:-148px; width:069px; }
+.logo4{ background-position-x:-219px; width:056px; }
+.logo5{ background-position-x:-280px; width:107px; }
+.logo6{ background-position-x:-390px; width:083px; }
+
+
+/*====================== NEWS ================*/
+
+.news>.wrapper{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top:94px;
+	height: 215px;
+	/*border: 1px solid #0f0;*/
+}
+
+.legal, .comments, .categories {			/*headline common*/
+	display: block;
+	text-align: bottom;
+	width: 288px;
+	overflow: hidden;
+	/*border: 1px solid #f00;*/
+}
+
+.news h3{
+	font-family: "League Gothic";
+	font-size: 30px;
+	color: #454545;
+	text-shadow: 1px 1px 1px rgb(255,255,255);
+}
+
+.news p{
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #454545;
+	text-shadow: 1px 1px 1px rgb(255,255,255);
+}
+
+.news>.wrapper>div:nth-of-type(n+4){ display: none;}
+
+
+
+/*---------------- legal (1st col) ---------------*/
+
+.legal>h3{ font-size: 48px; }
+
+.legal p:first-of-type{		/*copyright*/
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: #aaa;
+	line-height: 1.2;
+	margin-bottom: 5pt;
+}
+						
+
+/*====================== FOOTER =============*/
+
+.menu_dn{
+	top:36pt;
+	left:0pt;
+}
+
+.menu_dn>li>a {
+	margin: 2px 38px 1px 2px;
+	font-size: 20px;
+}
+
+.designed{
+	position: absolute;
+	left: 827px;
+	top: 64px;
+}
+
+/*====================================
+
+
+
+=====================================*/

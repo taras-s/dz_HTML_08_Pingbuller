@@ -1,0 +1,490 @@
+
+
+/*####################### SET 768 ######################*/
+
+@media screen and (max-width: 980px) {
+
+/*========================= BASE 768 ===================*/
+
+.wrapper{
+	width: 768px;
+	left: calc(50% - 384px);
+	/*border: 1px solid #00f;*/
+}
+
+.header		{ height: 810px; }
+/*.brand	{ height: 340px; }*/
+/*.article	{ height: 485px; }*/
+/*.logos	{ height: 120px; }*/
+/*.news		{ height: 392px; }*/
+/*.footer	{ height: 135px; }*/
+
+/*===================== OVERLAY 768 ===================*/
+
+.overlay	{ top: 240px; height: 440px;}
+
+.slide{	top: 350px;}
+.dot{	top: 380px;}
+
+/*====================== HEADER 768 ====================*/
+
+.logo_main{
+	left: 0px;
+	top: 20px;
+	width: 153px;
+}
+
+.pict_main{ left: 460px; top: 220px; }
+
+.menu { left: -23px; top: 100px; }
+
+.hdline{ top:250px; left:30px; }
+
+.hdline>h2{
+ 	font-size: 52px;
+	line-height: 0.7;
+}
+
+.hdline>h3{
+	margin-top: 8px;
+	font-size: 24px;
+	line-height: 1.4;
+}
+
+.hdline>p{
+	margin-top: 0px;
+	width: 360px;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+/*======================== BRAND 768 ===================*/
+
+.brand-block{ width: 240px; }
+
+.brand .tool { left:7px; }
+
+.brand h3 {
+	margin: 0px 0px 0px 50px;
+	font-size: 26px;
+	line-height: 1.5;
+}
+
+.brand p{
+	height: 125px;
+	margin: 0px 0px 0px 50px;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.brand a{ margin: 10px 10px 0px 170px; }
+
+
+
+/*======================= ARTICLE 768 =================*/
+
+.col-1{
+	width: 240px;
+	height: 280px;
+	/*border: 1px solid black;*/
+}
+
+.col-2{
+	width: 350px;
+	height: 310px;
+	padding: 20px 30px 0px 0px;
+}
+
+.article h3{
+	font-size: 28px;
+	line-height: 1.0;
+}
+
+.article p{
+	overflow: hidden;
+	height: 194px;
+/*	border: 1px solid black;*/
+}
+
+.article .row p{
+	height: 24px;
+	margin: 0px 0px 0px 65px;
+}
+
+.article h6{ padding-left: 250px; }
+
+
+/*======================== LOGOS 768 ===================*/
+
+.logo0{ width:35px; }
+
+/*========================= NEWS 768 ===================*/
+
+.news>.wrapper{
+	height: 204px;
+}
+
+.news>.wrapper>div:nth-of-type(n+3){ display: block;}
+.news>.wrapper>div:nth-of-type(-n+2){ display: none;}
+
+.news h3{ font-size: 24px; }
+
+.legal, .comments, .categories {
+	width: 230px;
+	/*border: 1px solid #f00;*/
+}
+
+
+/*======================== FOOTER 768 ==================*/
+
+.menu_dn{ top:30pt; left:0pt; }
+.designed{ left: 610px;	top: 90px; }
+
+}
+
+
+
+
+
+
+
+/*####################### SET 480 ######################*/
+
+@media screen and (max-width: 790px) {
+
+
+/*========================= BASE 480 =================*/
+
+.wrapper{
+	width: 480px;
+	left: calc(50% - 240px);
+	/*border: 1px solid #0f0;*/
+}
+
+.header		{ height: 545px; }
+.brand		{ height: 600px; }
+.article	{ height: 785px; }
+.logos		{ height: 235px; }
+.news		{ height: 670px; }
+.footer		{ height: 152px; }
+
+/*===================== OVERLAY 480 =================*/
+
+.overlay	{ top: 200px; height: 250px;}
+
+.slide{	top: 65px;}
+.dot{ top: 268px;}
+
+/*====================== HEADER 480 =================*/
+
+.logo_main{
+	left: calc(50% - 80px);
+	top: 46px;
+	width: 153px;
+}
+
+.pict_main{ left: 250px; top: 190px; width:40%;}
+
+
+.menu_up{				/* ----------------- menu ---------------*/
+	z-index: 1;
+	left: calc(50% - 128px);
+	top: 129px;
+	width: 246px;
+	background-color: rgba(25,10,38,0.8);
+}
+
+
+.menu_up>li {
+	display: block;
+	text-align: center;
+}
+
+.menu_up>li>a {
+	display: inline-block;
+	margin: 0px;
+	padding: 6px 0px 2px 0px;
+	width: 246px;
+	border-top: 1px solid rgba(150,150,150,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+/*.menu_up>li>a:last-of-type{
+	border-radius: 8px;
+}*/
+
+
+.menu_up>li>a:hover {
+	background-color: rgba(10,0,30,0.6);
+	padding: 6px 0px 1px 0px;
+}
+
+/*------------------------ menu end -----------*/
+
+.hdline{ top:39px; left:33px; }
+
+.hdline>h2{
+ 	font-size: 36px;
+	line-height: 0.7;
+}
+
+.hdline>h3{
+	margin-top: 8px;
+	font-size: 19px;
+	line-height: 1.4;
+}
+
+.hdline>p{ display: none; }
+
+
+
+/*======================== BRAND 480 ==========================*/
+
+.brand>.wrapper{
+	flex-direction: column;
+	justify-content:flex-start;
+}
+
+.brand-block{ width: 444px; }
+
+.brand .tool { left:7px; }
+
+.brand h3 {
+	margin: 0px 0px 0px 76px;
+	font-size: 24px;
+}
+
+.brand p{
+	height: 68px;
+	margin: 0px 0px 0px 76px;
+	font-size: 16px;
+}
+
+.brand a{ margin: 10px 10px 20px 377px; }
+
+
+/*======================= ARTICLE 480 =========================*/
+
+.article>.wrapper{
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items: center;
+	padding-top: 70px;
+}
+
+
+.col-1{
+	width: 350px;
+	height: 250px;
+	/*border: 1px solid black;*/
+}
+
+.col-2{
+	width: 350px;
+	height: 310px;
+	padding: 84px 30px 0px 56px;
+	/*border: 1px solid black;*/
+}
+
+.article h3{
+	font-size: 30px;
+	line-height: 1.3;
+}
+
+.nav-dots{ top: 290px;}
+
+
+
+/*======================== LOGOS 480 ==========================*/
+
+.logos>.wrapper{
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	padding: 25px 68px;
+	/*border: 1px solid #f00;*/
+}
+
+.logo{
+	margin:0px 10px;
+	/*border: 1px solid #00f;*/
+}
+
+.logo0{ display: none; }
+
+
+/*========================= NEWS 480 ==========================*/
+
+.news>.wrapper{
+	height: 500px;
+	padding: 75px 0px 0px 20px;
+}
+
+.news>.wrapper{
+	flex-direction: column;
+}
+
+
+.legal, .comments, .categories {
+	width: 430px;
+	/*border: 1px solid #f00;*/
+}
+
+.news p{
+	width: 420px;
+	height: 98px;
+}
+
+
+/*======================== FOOTER 480 =========================*/
+
+.menu_dn{
+	left:14pt;
+	top:28pt;
+}
+
+.menu_dn>li>a {	margin: 2px 18px 1px 2px; }
+
+.designed{ 
+	left: calc(50% - 70px);
+	top: 100px; 
+}
+
+}
+
+
+
+
+
+
+/*####################### SET 320 ######################*/
+
+@media screen and (max-width: 500px) {
+
+/*========================= BASE 320 ==========================*/
+
+.wrapper{
+	width: 320px;
+	left: calc(50% - 160px);
+	/*border: 1px solid #F00;*/
+}
+
+
+.header		{ 
+	height: 407px; 
+	background-position-y: -190px;
+	background-size: auto;
+}
+
+.brand		{ height: 600px; }
+.article	{ height: 785px; }
+.logos		{ height: 423px; }
+.news		{ display: none; }
+.footer		{ height: 200px; }
+
+
+
+/*====================== OVERLAY, HEADER 320 ===========================*/
+
+.logo_main, .pict_main, .menu_dn{
+	display: none;
+}
+
+.overlay {background-color: transparent;}
+.slide{	top: -5px; z-index: 5; }
+.dot{ top: 122px;}
+
+.hdline{top:190px;}
+
+/*------------------------ menu ----------------------*/
+
+.menu_up, .menu_up>li, .menu_up>li>a{
+	all: unset;
+}
+
+
+.menu_up {				/*----------- menu (copy of root) ------------*/
+	display: block;
+	position: absolute;
+	left: calc(50% - 20px);
+	top: 65px;
+	list-style: none;
+}
+
+.menu_up>li {
+	display: inline-block;
+}
+
+.menu_up>li>a {
+	display: block;
+	text-decoration: none;
+	padding: 6px 0px 1px 0px;
+
+	font-size: 24px;
+	font-family: "League Gothic";
+	color: #FFF;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
+	border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.menu_up>li>a:hover {
+	border-bottom: 2px solid #edbfff;
+	background-color: transparent;
+}
+
+
+.menu_up>li{ display: none; }
+.menu_up>li:first-of-type{ display: inline-block; }
+
+
+/*----------------------- end menu --------- */
+
+
+/*======================== BRAND 320 ==========================*/
+
+.brand-block{ width: 300px; }
+
+.brand a{ margin: 10px 10px 20px 228px; }
+
+.brand .tool { left:16px; }
+
+/*======================= ARTICLE 320 =========================*/
+
+
+.col-1{
+	width: 200px;
+	height: 250px;
+	/*border: 1px solid black;*/
+}
+
+.article h3{
+	font-size: 25px;
+	line-height: 1.3;
+}
+
+.col-2{
+	width: 300px;
+	/*border: 1px solid black;*/
+}
+
+.article h6{ padding-left: 190px; }
+
+
+
+/*======================== LOGOS 320 ==========================*/
+
+.logos>.wrapper{
+	padding: 25px 57px;
+	/*border: 1px solid #f00;*/
+}
+
+.logo{
+	margin: 0px 0px;
+	/*border: 1px solid #00f;*/
+}
+
+/*======================== FOOTER 320 =========================*/
+
+.designed{ top: 40px; }
+
+}
